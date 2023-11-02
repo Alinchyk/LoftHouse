@@ -1,0 +1,18 @@
+.map {
+  padding: 180px 0;
+
+  .map__inner {
+    .map__title {
+      color: $accent;
+      font-family: $font-accent;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 88px;
+    }
+
+    .section__map {
+      height: 358px;
+      background-color: #626262;
+    }
+  }
+}
