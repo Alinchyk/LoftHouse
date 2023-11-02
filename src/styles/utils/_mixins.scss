@@ -11,3 +11,13 @@
     height: 21px;
   }
 }
+
+@mixin cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@mixin customTransition {
+  transition: background-color 0.2s ease;
+}

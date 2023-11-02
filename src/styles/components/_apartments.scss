@@ -34,7 +34,8 @@
           opacity: 1;
         }
 
-        &:hover {
+        &:hover,
+        :focus {
           color: $white;
 
           .card__img {
