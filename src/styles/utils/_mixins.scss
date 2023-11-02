@@ -21,3 +21,53 @@
 @mixin customTransition {
   transition: background-color 0.2s ease;
 }
+
+@mixin title {
+  color: $accent;
+  font-family: $font-accent;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@mixin input {
+  height: 50px;
+  padding: 12px;
+  background-color: rgb(255, 255, 255, 0.2);
+  text-align: center;
+  color: $white;
+  font-size: 14px;
+  outline: none;
+  @include customTransition;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &:hover,
+  :focus {
+    background-color: rgb(255, 255, 255, 0.3);
+  }
+}
+
+@mixin form-btn {
+  background-color: $accent;
+  height: 50px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  color: $white;
+  outline: none;
+  @include customTransition;
+
+  &:hover,
+  :focus {
+    background-color: saturate($accent, 10%);
+  }
+}
+
+@mixin privacy-text {
+  font-size: 13px;
+  color: $privacy-color;
+  text-align: center;
+  line-height: 1.23;
+}

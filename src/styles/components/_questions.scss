@@ -1,0 +1,28 @@
+.questions {
+  padding-bottom: 180px;
+
+  .questions__inner {
+    .questions__title {
+      @include title;
+      margin-bottom: 38px;
+    }
+
+    .questions__form {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+
+      .form__input {
+        @include input;
+      }
+
+      .input__text {
+        @include privacy-text;
+      }
+
+      .form__btn {
+        @include form-btn;
+      }
+    }
+  }
+}

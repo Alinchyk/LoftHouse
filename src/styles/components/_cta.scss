@@ -4,9 +4,7 @@
 
   .cta__inner {
     .cta__title {
-      font-family: $font-accent;
-      color: $accent;
-      font-size: 36px;
+      @include title;
       margin-bottom: 17px;
     }
 
@@ -21,45 +19,15 @@
         @include cta;
 
         .form__input {
-          height: 50px;
-          padding: 12px;
-          background-color: rgb(255, 255, 255, 0.2);
-          text-align: center;
-          color: $white;
-          font-size: 14px;
-          outline: none;
-          @include customTransition;
-
-          &::placeholder {
-            color: $placeholder-color;
-          }
-
-          &:hover,
-          :focus {
-            background-color: rgb(255, 255, 255, 0.3);
-          }
+          @include input;
         }
 
         .form__privacy {
-          font-size: 13px;
-          color: $privacy-color;
-          text-align: center;
-          line-height: 1.23;
+          @include privacy-text;
         }
 
         .form__btn {
-          background-color: $accent;
-          height: 50px;
-          font-weight: 700;
-          text-align: center;
-          padding: 12px;
-          color: $white;
-          @include customTransition;
-
-          &:hover,
-          :focus {
-            background-color: saturate($accent, 10%);
-          }
+          @include form-btn;
         }
       }
     }

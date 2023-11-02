@@ -1,11 +1,8 @@
 .apartments {
   .apartments__inner {
     .apartments__title {
-      font-size: 36px;
-      color: $accent;
+      @include title;
       margin-bottom: 88px;
-      font-family: $font-accent;
-      font-weight: 700;
     }
 
     .apartments__cards {
