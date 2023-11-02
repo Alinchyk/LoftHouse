@@ -1,0 +1,48 @@
+.footer {
+  background-color: $footer-bg;
+  padding-top: 72px;
+  padding-bottom: 51px;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+
+  .footer__inner {
+    .footer__row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+
+      .footer__logo {
+        display: block;
+        margin-top: -12px;
+
+        .logo__text {
+          @include logo-text;
+        }
+      }
+
+      .footer__nav-list {
+        display: grid;
+        gap: 15px;
+      }
+
+      .footer__adress {
+        .email {
+          color: $accent;
+        }
+
+        .socials {
+          display: flex;
+          text-align: center;
+          column-gap: 22px;
+          margin-top: 20px;
+        }
+
+        .socials li:hover,
+        :focus img {
+          transform: scale(1.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

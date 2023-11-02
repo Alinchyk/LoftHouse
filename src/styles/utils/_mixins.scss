@@ -1,3 +1,8 @@
+@mixin logo-text {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
 @mixin svg-position {
   position: relative;
   padding-left: 35px;
