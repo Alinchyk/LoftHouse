@@ -1,0 +1,28 @@
+.video {
+  text-align: center;
+
+  .video__inner {
+    .video__link {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      @include customTransition;
+
+      &:hover {
+        filter: brightness(120%);
+
+        .video__icon {
+          transform: translate(-50%, -50%) scale(1.1);
+          filter: saturate(1.5);
+        }
+      }
+    }
+
+    .video__icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
