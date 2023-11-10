@@ -152,6 +152,7 @@
                 autocomplete="off"
               />
               <input
+                data-tel-input
                 type="tel"
                 class="form__input"
                 placeholder="Your phone"
@@ -172,9 +173,9 @@
         <h2 class="visually-hidden">Video</h2>
         <div class="container video__inner">
           <a
-            href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
+            href="javascript:void(0);"
+            data-video-id="bhJNL9JUsnY"
             class="video__link"
-            target="_blank"
           >
             <img
               class="video__icon"
@@ -190,10 +191,33 @@
         </div>
       </section>
 
+      <div id="videoModal">
+        <div id="videoContainer">
+          <span id="videoClose">&times;</span>
+          <iframe
+            width="100%"
+            height="100%"
+            src=""
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
       <section class="map" id="map">
         <div class="container map__inner">
           <h2 class="map__title">District on the map</h2>
-          <div class="section__map"></div>
+          <div class="section__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.8855789537993!2d20.94840109374864!3d52.22729658563373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb67e1d066b9%3A0x1694b46ea808c368!2sMarcina%20Kasprzaka%2031%2Fu10%2C%2001-234%20Warszawa!5e0!3m2!1spl!2spl!4v1699623948559!5m2!1spl!2spl"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -213,7 +237,8 @@
               autocomplete="off"
             />
             <input
-              type="text"
+              data-tel-input
+              type="tel"
               class="form__input"
               placeholder="Your phone"
               autocomplete="off"

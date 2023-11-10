@@ -1,5 +1,5 @@
 .header {
-  min-height: 840px;
+  max-height: 840px;
   background-image: url(/src/images/header/header-bg.jpg);
 
   .header__inner {
@@ -26,6 +26,10 @@
         gap: 40px;
         font-size: 14px;
       }
+    }
+
+    .header__nav-btn {
+      display: none;
     }
 
     .header__title {

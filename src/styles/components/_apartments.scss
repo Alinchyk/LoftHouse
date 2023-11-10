@@ -1,4 +1,16 @@
 .apartments {
+  position: relative;
+
+  &::before {
+    @include decorNumber;
+
+    content: "III";
+    top: 0;
+    right: calc(50% + 555px);
+    transform: translate(50%, 0%);
+    line-height: 1;
+  }
+
   .apartments__inner {
     .apartments__title {
       @include title;

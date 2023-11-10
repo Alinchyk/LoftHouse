@@ -1,5 +1,16 @@
 .benefits {
   padding: 120px 0;
+  position: relative;
+
+  &::after {
+    @include decorNumber;
+
+    content: "II";
+    top: 0;
+    left: calc(50% + 575px);
+    transform: translate(-50%, 0%);
+    line-height: 1.15;
+  }
 
   .benefits__inner {
     display: flex;
